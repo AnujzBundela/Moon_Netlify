@@ -1,0 +1,762 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu | Moonlight Restaurant</title>
+      <!-- Meta Robots (SEO Indexing): -->
+      <meta name="robots" content="index, follow">
+      <meta name="description" content="Moonlight Restaurant offers an unforgettable dining experience in the heart of the city's most luxurious district. Enjoy gourmet cuisine, a vibrant sports café atmosphere, and top-tier hospitality.">
+      <meta name="keywords" content="Moonlight Restaurant, fine dining, sports café, luxury restaurant, best restaurant in city, gourmet cuisine, city nightlife, upscale dining, game night restaurant, urban food experience">
+      <meta name="author" content="Moonlight Restaurant Team">
+      
+      <!-- Open Graph (For Social Media Sharing) -->
+      <meta property="og:title" content="Moonlight Restaurant | Fine Dining Meets Sports Café Vibes">
+      <meta property="og:description" content="Discover Moonlight Restaurant — where upscale dining meets lively sports energy. A perfect place to unwind with gourmet food, handcrafted drinks, and live sports.">
+      <!-- <meta property="og:url" content="https://moonlightrestaurant.in">
+      <meta property="og:image" content="https://moonlightrestaurant.in/images/og-preview.jpg"> -->
+      <meta property="og:type" content="website">
+      
+      <link rel="icon" type="image/x-icon" href="image/Fevicon.webp" /> 
+
+      <link fetchpriority="high" rel="preload" href="image/MoonLightLogo.webp" as="image" type="image/webp" />
+      <!-- Preload -->
+      <link rel="preload" as="style" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" />
+      <link rel="preload" as="style" href="css/responsive.css" />
+
+      <!-- <script async src="js/dynamic.js"></script> -->
+      <link rel="stylesheet" href="css/style.css" />
+      <link rel="stylesheet" href="css/responsive.css" />
+      <link rel="preconnect" href="https://kit.fontawesome.com" />
+      <link rel="dns-prefetch" href="https://kit.fontawesome.com" />
+      <script src="https://kit.fontawesome.com/52ca9e0df4.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <!-- header section start -->
+    <header>
+        <section class="miniHeader">
+          <div class="container text-white">
+            <div class="row justify-content-between">
+              <div class="col-auto numberAndEmail">
+                <a href="tel:+919978223443"><i class="fa-solid fa-phone"></i> +91 99782 23443</a>
+                <a href="mailto:your@email.com"><i class="fa-solid fa-envelope"></i>
+                  your@email.com</a>
+              </div>
+              <div class="col-auto">
+                <i class="fa-regular fa-clock"></i> <span> Mon-Fri/ 10:00-21:00, Sat-Sun/ 09:00-12:00</span>
+                <a target="_blank" class="fa-brands fa-facebook-f" href="https://www.facebook.com/"></a>
+                <a target="_blank" class="fa-brands fa-instagram" href="https://www.instagram.com/moonlight_resto_cafe"></a>
+                <a target="_blank" class="fa-brands fa-twitter" href="https://x.com/?lang=en"></a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <nav class="navbar navbar-expand-lg ">
+          <div class="container">
+            <a class="navbar-brand" href="index.html"><img src="image/MoonLightLogo.webp" alt="Moon Light Logo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mx-lg-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link " aria-current="page" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">Chefs</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="javascript:void(0)">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+    
+            </div>
+          </div>
+        </nav>
+      </header>
+
+
+    <!-- banner section Start -->
+    <section class="banner ">
+
+        <img src="image/47795c37b81cd9d6279f90c97990942d.jfif" alt="BannerImage">
+        <div class="container">
+            <h1 class="display-3">Menu Mixed</h1>
+        </div>
+    </section>
+
+    <!-- banner section End -->
+
+
+    
+  <section class="SearchSection  bg-dark p-5" id="scrollTop">
+    <div class="container-fluid">
+        <form class="row justify-content-center" action="#">
+            <input class="col-sm-8 col-lg-6" type="text" id="searchItems">
+            <button type="button" class="btn col-auto mt-4 mt-sm-0" data-id="all" onclick="searchItem()">Search</button>
+          </form>
+    </div>
+  </section>
+
+    <section class="menuFunctional defaultPadding">
+        <div class="container">
+
+            <div class="col-12">
+                <div class="wrap2">
+                    <span class="btn-container" id="btn1">
+                      <button type="button" class="btn btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal"
+                        data-id="all" onclick="mapCartItem()"><i class="fa-solid fa-cart-shopping"><sub
+                            id="count"></sub></i></button>
+                    </span>
+                    <button class="btn btn-primary d-lg-none d-inline" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">Filter By ..</button>
+
+                  </div>
+            </div>
+
+            <div class="row">
+              
+                <div class="col-lg-3 sideBar">
+                        <div class="stickySideBar">
+                           <div class="offcanvas-lg offcanvas-bottom" tabindex="-1" id="offcanvasBottom" aria-labelledby="offcanvasBottomLabel">
+                               <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasBottomLabel">Filter By ..</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasBottom" aria-label="Close"></button>
+                              </div>
+                              <div class="offcanvas-body small">
+                                 <div id="btn" class="filterButtons">
+                                     <button type="button" class="btn" data-id="all" onclick="sortDataN('price','Desc')">High to Low</button>      
+                                     <button type="button" class="btn" data-id="all" onclick="sortDataN('price','Asc')">Low to High</button>
+                                 </div>
+                              </div>
+                             </div>
+                        </div>
+                   
+                </div>
+
+                
+               
+                <div class="col-lg-9">
+                    <div class="row" id="menu">
+                     
+                          <div id="loading">Loading more products...</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+      <!-- modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog  modal-dialog-scrollable">
+      <!-- <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart Items</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="totalAmount">
+
+        </div>
+        <div id="amt"></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onclick="totalprice()">Checkout</button>
+        </div>
+      </div> -->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Cart Items</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"
+            fdprocessedid="ovet"></button>
+        </div>
+        <div class="modal-body" id="totalAmount">
+          <div id="productImage">
+            <article class="menu-item">
+              <img src="./images/item-1.jpeg" alt="menu item" class="photo">
+              <div class="item-info">
+                <header>
+                  <h4>buttermilk pancakes</h4>
+                  <h4 class="price">15.99</h4>
+                </header>
+                <div id="productQuantity">
+                  <button class="_23FHuj" fdprocessedid="3hp15" onclick="decQty(0)"> - </button>
+                  <input type="text" class="_253qQJ" value="12" fdprocessedid="pecz9" id="inp">
+                  <button class="_23FHuj" fdprocessedid="7l8pfo" onclick="incQty(0)"> + </button>
+                  
+                </div>
+               
+              </div>
+            </article>
+          </div>
+         
+         
+        </div>
+        <div id="amt" class="text-end p-2"><b></b> </div>
+     
+        <div class="modal-footer">
+          <button class="btn btn-danger" onclick="clearCart()">Clear Cart</button>
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal" fdprocessedid="7a2l7c">Close</button>
+          <button id="desktopBtn" class="Mybtn btn btn-primary" type="submit"><span>Checkout</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+    <!-- Appetizers Section Start -->
+    <section class="Appetizers defaultPadding">
+        <div class="container">
+            <h2 class="secH text-uppercase BefAftStyleBlack">Appetizers</h2>
+            <div class="row">
+                <div class=" col-lg-6">
+                    <div class="row align-items-center justify-content-center">
+                        <div class="CirclePic col-8 pb-3 pb-sm-0 col-sm-6">
+                            <div class="zoomWrap">
+                                <img class="zoom" src="image/Gallery4.jfif" alt="Dish Pic">
+                            </div>
+                        </div>
+                        <div class="CirclePic col-8 col-sm-6">
+                            <div class="zoomWrap">
+                                <img class="zoom" src="image/disheItems (4).png" alt="Dish Pic">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+
+                    <ul>
+                        <li>
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <h2 class="fourthH">Mixed fruits</h2>
+                                    <span>Raspberries, Blueberry, Honey</span>
+                                </div>
+                                <div class="col-auto"><strong class="therdH">₹80</strong></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <h2 class="fourthH">Caesar salad</h2>
+                                    <span>Garlic, Olive oil, Cheese</span>
+                                </div>
+                                <div class="col-auto"><strong class="therdH">₹80</strong></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <h2 class="fourthH">Crispy shrimp</h2>
+                                    <span>Tomato, Cheese, Watercrese</span>
+                                </div>
+                                <div class="col-auto"><strong class="therdH">₹80</strong></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="row justify-content-between">
+                                <div class="col-auto">
+                                    <h2 class="fourthH">Mama puff</h2>
+                                    <span>Tomato, Cheese, Watercrese</span>
+                                </div>
+                                <div class="col-auto"><strong class="therdH">₹80</strong></div>
+                            </div>
+                        </li>
+
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appetizers Section End -->
+
+    <!-- Brunches Section start -->
+    <section class="Brunches Devider defaultPadding">
+        <div class="container text-center">
+            <h2 class="secH">Brunches</h2>
+            <span class="therdH">From 7:00AM - 10:30AM</span>
+        </div>
+    </section>
+    <!-- Brunches Section End -->
+
+    <!-- BrunchesCard section Start -->
+    <section class="BrunchesCard  defaultPadding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="zoomWrap">
+                        <img class="zoom" src="image/disheItems (4).jfif" alt="Dish Pic">
+                        <div class="overlay text-center">
+                            <div>
+                                <h2><i class="fa-regular fa-thumbs-up"></i> Healthy</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptate saepe error
+                                    odit ullam facilis.bhsdkb jhcjkhjl jldlkc njxzjlk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textpart">
+                        <div class="row justify-content-between pt-4">
+                            <div class="col-9">
+                                <h2 class="fourthH text-uppercase">Panchavarna Uttapam</h2>
+                                <p class="mb-1">Bread, Rice</p>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star"
+                                    aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i
+                                    class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="col-auto align-self-start pe-3">
+                                <strong class="PriceH">₹90</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="zoomWrap">
+                        <img class="zoom" src="image/Gallery5.jfif" alt="Dish Pic">
+                        <div class="overlay text-center">
+                            <div>
+                                <h2><i class="fa-regular fa-thumbs-up"></i> Healthy</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptate saepe error
+                                    odit ullam facilis.bhsdkb jhcjkhjl jldlkc njxzjlk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textpart">
+                        <div class="row justify-content-between pt-4">
+                            <div class="col-9">
+                                <h2 class="fourthH text-uppercase">Medu Vada</h2>
+                                <p class="mb-1">Dall, Curd, Chillies</p>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star"
+                                    aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i
+                                    class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="col-auto align-self-start pe-3">
+                                <strong class="PriceH">₹50</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="zoomWrap">
+                        <img class="zoom" src="image/Oat Cereal.png" alt="Dish Pic">
+                        <div class="overlay text-center">
+                            <div>
+                                <h2><i class="fa-regular fa-thumbs-up"></i> Healthy</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptate saepe error
+                                    odit ullam facilis.bhsdkb jhcjkhjl jldlkc njxzjlk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textpart">
+                        <div class="row justify-content-between pt-4">
+                            <div class="col-9">
+                                <h2 class="fourthH text-uppercase">Vaghar Idli</h2>
+                                <p class="mb-1">Rice, Tomato, Chese</p>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star"
+                                    aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i
+                                    class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="col-auto align-self-start pe-3">
+                                <strong class="PriceH">₹65</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="zoomWrap">
+                        <img class="zoom" src="image/Sabji2.jfif" alt="Dish Pic">
+                        <div class="overlay text-center">
+                            <div>
+                                <h2><i class="fa-regular fa-thumbs-up"></i> Healthy</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptate saepe error
+                                    odit ullam facilis.bhsdkb jhcjkhjl jldlkc njxzjlk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textpart">
+                        <div class="row justify-content-between pt-4">
+                            <div class="col-9">
+                                <h2 class="fourthH text-uppercase">Masala Dosa</h2>
+                                <p class="mb-1">Garlic, Olive Oil, Cheese</p>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star"
+                                    aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i
+                                    class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="col-auto align-self-start pe-3">
+                                <strong class="PriceH">₹80</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="zoomWrap">
+                        <img class="zoom" src="image/disheItems (6).jfif" alt="Dish Pic">
+                        <div class="overlay text-center">
+                            <div>
+                                <h2><i class="fa-regular fa-thumbs-up"></i> Healthy</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptate saepe error
+                                    odit ullam facilis.bhsdkb jhcjkhjl jldlkc njxzjlk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textpart">
+                        <div class="row justify-content-between pt-4">
+                            <div class="col-9">
+                                <h2 class="fourthH text-uppercase">Chocolate Chip Cookie</h2>
+                                <p class="mb-1">Cookie, Chocolate, Strawbwrry</p>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star"
+                                    aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i
+                                    class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="col-auto align-self-start pe-3">
+                                <strong class="PriceH">$3</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="zoomWrap">
+                        <img class="zoom" src="image/disheItems (5).jfif" alt="Dish Pic">
+                        <div class="overlay text-center">
+                            <div>
+                                <h2><i class="fa-regular fa-thumbs-up"></i> Healthy</h2>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Natus voluptate saepe error
+                                    odit ullam facilis.bhsdkb jhcjkhjl jldlkc njxzjlk</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="textpart">
+                        <div class="row justify-content-between pt-4">
+                            <div class="col-9">
+                                <h2 class="fourthH text-uppercase">Blueberry Sandwich</h2>
+                                <p class="mb-1">Blueberry Jam, Butter, Bread</p>
+                                <i class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star"
+                                    aria-hidden="true"></i><i class="fa-solid fa-star" aria-hidden="true"></i><i
+                                    class="fa-solid fa-star" aria-hidden="true"></i><i class="fa-solid fa-star"
+                                    aria-hidden="true"></i>
+                            </div>
+                            <div class="col-auto align-self-start pe-3">
+                                <strong class="PriceH">$6</strong>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- BrunchesCard section End -->
+
+    <!-- Dinner Section Start -->
+    <section class="Dinner Devider defaultPadding">
+        <div class="container text-center">
+            <h2 class="secH">Dinner</h2>
+            <span class="therdH">From 5:00AM - 11:30AM</span>
+        </div>
+    </section>
+    <!-- Dinner Section End -->
+
+    <!-- DinnerCard section Start -->
+    <section class="DinnerCard  defaultPadding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="zoomWrap">
+                        <img class="zoom" src="image/Gallery2.jfif" alt="Dish Pic">
+                        <div class="overlay text-center text-white">
+                            <div>
+                                <h2 class="fourthH">Australian Ribeye</h2>
+                                <p>Chips, Potato, Salad</p>
+                                <p><strong class="PriceH">₹120</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="zoomWrap">
+                        <img class="zoom" src="image/TRIO SAUSAGES.png" alt="Dish Pic">
+                        <div class="overlay text-center text-white">
+                            <div>
+                                <h2 class="fourthH">Australian Ribeye</h2>
+                                <p>Chips, Potato, Salad</p>
+                                <p><strong class="PriceH">₹120</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="zoomWrap">
+                        <img class="zoom" src="image/disheItems (3).png" alt="Dish Pic">
+                        <div class="overlay text-center text-white">
+                            <div>
+                                <h2 class="fourthH">Australian Ribeye</h2>
+                                <p>Chips, Potato, Salad</p>
+                                <p><strong class="PriceH">₹120</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="zoomWrap">
+                        <img class="zoom" src="image/disheItems (3).jfif" alt="Dish Pic">
+                        <div class="overlay text-center text-white">
+                            <div>
+                                <h2 class="fourthH">Australian Ribeye</h2>
+                                <p>Chips, Potato, Salad</p>
+                                <p><strong class="PriceH">₹120</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 ">
+                    <div class="zoomWrap">
+                        <img class="zoom" src="image/disheItems (2).jfif" alt="Dish Pic">
+                        <div class="overlay text-center text-white">
+                            <div>
+                                <h2 class="fourthH">Australian Ribeye</h2>
+                                <p>Chips, Potato, Salad</p>
+                                <p><strong class="PriceH">₹120</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6">
+                    <div class="zoomWrap">
+                        <img class="zoom" src="image/disheItems (1).jfif" alt="Dish Pic">
+                        <div class="overlay text-center text-white">
+                            <div>
+                                <h2 class="fourthH">Australian Ribeye</h2>
+                                <p>Chips, Potato, Salad</p>
+                                <p><strong class="PriceH">₹120</strong></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- DinnerCard section End -->
+
+<!-- Sweet Delight Section start -->
+<section class="SweetDelight Devider defaultPadding">
+    <div class="container text-center">
+        <h2 class="secH">Dinner</h2>
+        <span class="therdH">From 5:00AM - 11:30AM</span>
+    </div>
+</section>
+<!-- Sweet Delight Section End -->
+
+ <!-- Appetizers Section Start -->
+ <section class="Appetizers  defaultPadding">
+    <div class="container">
+        <h2 class="secH text-uppercase BefAftStyleBlack">Dessert</h2>
+        <div class="row reverse">
+            <div class="col-lg-6">
+                <div class="row align-items-center justify-content-center">
+                    <div class="CirclePic col-8 pb-3 pb-sm-0 col-sm-6">
+                        <div class="zoomWrap">
+                            <img class="zoom" src="image/disheItems (2).png" alt="Dish Pic">
+                        </div>
+                    </div>
+                    <div class="CirclePic col-8 col-sm-6">
+                        <div class="zoomWrap">
+                            <img class="zoom" src="image/disheItems (1).png" alt="Dish Pic">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-6">
+
+                <ul>
+                    <li>
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                <h2 class="fourthH">Cookies'n Cream</h2>
+                                <span>Ice Cream, Cookie, Chocolate</span>
+                            </div>
+                            <div class="col-auto"><strong class="therdH">₹85</strong></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                <h2 class="fourthH">Rainbow Macaroon</h2>
+                                <span>Macroon, Berries, Cream</span>
+                            </div>
+                            <div class="col-auto"><strong class="therdH">₹85</strong></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                <h2 class="fourthH">Tiramisu</h2>
+                                <span>Espresso Coffee, Eggs, Cocoa</span>
+                            </div>
+                            <div class="col-auto"><strong class="therdH">₹85</strong></div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="row justify-content-between">
+                            <div class="col-auto">
+                                <h2 class="fourthH">Johnny Waffles</h2>
+                                <span>Raspberries Blueberry, Waffle, Vanilla</span>
+                            </div>
+                            <div class="col-auto"><strong class="therdH">₹85</strong></div>
+                        </div>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Appetizers Section End -->
+
+
+    <!-- Footer Section Start -->
+    <footer class="defaultPadding">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-3 col-md-6 ">
+              <a class="navbar-brand" href="index.html"><img src="image/MoonLightLogo.webp" alt="Moon light Logo"></a>
+              <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur. Donec id elit non mi.</p>
+              <div class="fIcons">
+                <a target="_blank" class="fa-brands fa-facebook-f" href="https://www.facebook.com/"></a>
+                <a target="_blank" class="fa-brands fa-instagram" href="https://www.instagram.com/moonlight_resto_cafe"></a>
+                <a target="_blank" class="fa-brands fa-x-twitter" href="https://x.com/?lang=en"></a>
+                <a target="_blank" class="fa-brands fa-linkedin-in" href="https://www.linkedin.com/authwall?trk=bf&trkInfo=AQH3HyOeX_gCXgAAAZJbhlgANMabyJfAewxAY9qdxU6QsJHvozrFZ51a8_tYQyBRvuwnA3uVR8G7943UdA0TlnFJzLvY9FQFuffSjfYFTIwQ_DjL6JSlBWNnWNmu50MKpPpSrNY=&original_referer=&sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fin%2Fvimal-gupta-2458b0260"></a>
+              </div>
+            </div>
+            <div class="col-lg-auto col-md-6">
+              <h2 class="fourthH">Quick Links</h2>
+              <ul>
+                <li>
+                  <a target="_blank" href="index.html">Home</a>
+                </li>
+                <li>
+                  <a  href="javascript:void(0)">Chefs</a>
+                </li>
+                <li>
+                  <a  href="menu.html">Menu</a>
+                </li>
+                <li>
+                  <a  href="javascript:void(0)">About Us</a>
+                </li>
+                <li>
+                  <a target="_blank" href="contact.html">Contact Us</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-4 col-md-6 about">
+              <h2 class="fourthH">Reach Us</h2>
+              <address>
+              <a target="_blank" href="https://maps.app.goo.gl/287Hx3HE7NKHMayu7"><i class="fa-solid fa-location-arrow"></i> Address: Moon light resto and cafe, near The eclipse -2, New Alkapuri, Ankodiya, Vadodara, Gujarat 391101</a>
+              </address>
+              <a href="tel:+919978223443"><i class="fa-solid fa-mobile-screen"></i> +91 99782 23443</a>
+              <a href="mailto:your@email.com"><i class="fa-solid fa-envelope"></i>
+                your@email.com</a>
+    
+            </div>
+            <!-- <div class="col-lg-3 col-md-6 ">
+              <h2 class="fourthH">Award Winning</h2>
+              <div class="companyImage d-flex flex-wrap justify-content-between">
+                <a href="#"><img src="image/FooterImage1.png" alt="companyImage"></a>
+                <a href="#"><img src="image/FooterImage2.png" alt="companyImage"></a>
+                <a href="#"><img src="image/FooterImage3.png" alt="companyImage"></a>
+                <a href="#"><img src="image/FooterImage4.png" alt="companyImage"></a>
+              </div>
+              <p class="mb-0">Nullam quis risus eget urna mollis ornare eu leo. Vestibulum ligula porta felis euismod
+                semper. </p>
+            </div> -->
+          </div>
+        </div>
+    <!-- whatsapp FAB icon -->
+        <div class="fab-container">
+          <a class="set-url-target" rel="noopener" data-mobile-target="" data-desktop-target="_blank" target="_blank" href="https://web.whatsapp.com/send?phone=919978223443"><span class="sr-only">Whatsapp</span><svg aria-hidden="true" class="ico_d " width="39" height="39" viewBox="0 0 39 39" fill="none" xmlns="http://www.w3.org/2000/svg" style="transform: rotate(0deg);"><circle class="color-element" cx="19.4395" cy="19.4395" r="19.4395" fill="#49E670"></circle><path d="M12.9821 10.1115C12.7029 10.7767 11.5862 11.442 10.7486 11.575C10.1902 11.7081 9.35269 11.8411 6.84003 10.7767C3.48981 9.44628 1.39593 6.25317 1.25634 6.12012C1.11674 5.85403 2.13001e-06 4.39053 2.13001e-06 2.92702C2.13001e-06 1.46351 0.83755 0.665231 1.11673 0.399139C1.39592 0.133046 1.8147 1.01506e-06 2.23348 1.01506e-06C2.37307 1.01506e-06 2.51267 1.01506e-06 2.65226 1.01506e-06C2.93144 1.01506e-06 3.21063 -2.02219e-06 3.35022 0.532183C3.62941 1.19741 4.32736 2.66092 4.32736 2.79397C4.46696 2.92702 4.46696 3.19311 4.32736 3.32616C4.18777 3.59225 4.18777 3.59224 3.90858 3.85834C3.76899 3.99138 3.6294 4.12443 3.48981 4.39052C3.35022 4.52357 3.21063 4.78966 3.35022 5.05576C3.48981 5.32185 4.18777 6.38622 5.16491 7.18449C6.42125 8.24886 7.39839 8.51496 7.81717 8.78105C8.09636 8.91409 8.37554 8.9141 8.65472 8.648C8.93391 8.38191 9.21309 7.98277 9.49228 7.58363C9.77146 7.31754 10.0507 7.1845 10.3298 7.31754C10.609 7.45059 12.2841 8.11582 12.5633 8.38191C12.8425 8.51496 13.1217 8.648 13.1217 8.78105C13.1217 8.78105 13.1217 9.44628 12.9821 10.1115Z" transform="translate(12.9597 12.9597)" fill="#FAFAFA"></path><path d="M0.196998 23.295L0.131434 23.4862L0.323216 23.4223L5.52771 21.6875C7.4273 22.8471 9.47325 23.4274 11.6637 23.4274C18.134 23.4274 23.4274 18.134 23.4274 11.6637C23.4274 5.19344 18.134 -0.1 11.6637 -0.1C5.19344 -0.1 -0.1 5.19344 -0.1 11.6637C-0.1 13.9996 0.624492 16.3352 1.93021 18.2398L0.196998 23.295ZM5.87658 19.8847L5.84025 19.8665L5.80154 19.8788L2.78138 20.8398L3.73978 17.9646L3.75932 17.906L3.71562 17.8623L3.43104 17.5777C2.27704 15.8437 1.55796 13.8245 1.55796 11.6637C1.55796 6.03288 6.03288 1.55796 11.6637 1.55796C17.2945 1.55796 21.7695 6.03288 21.7695 11.6637C21.7695 17.2945 17.2945 21.7695 11.6637 21.7695C9.64222 21.7695 7.76778 21.1921 6.18227 20.039L6.17557 20.0342L6.16817 20.0305L5.87658 19.8847Z" transform="translate(7.7758 7.77582)" fill="white" stroke="white" stroke-width="0.2"></path></svg></a>
+      </div>
+    
+      </footer>
+      
+    <!-- Footer Section End -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<script>
+    $(document).ready(function () {
+      function constructWhatsAppMessage() {
+        let phoneNumber = "916354710794";
+        let message = "Hello, I want to buy the following products:\n\n";
+  
+        if (cart.length === 0) {
+          message += "Cart is empty.";
+        } else {
+          cart.forEach((item, index) => {
+            message += `${index + 1}. ${item.items.title} - Quantity: ${item.quantity}\n`;
+          });
+  
+          let total = cart.reduce((sum, item) => sum + (item.items.price * item.quantity), 0);
+          message += `\nTotal Amount: ₹${total.toFixed(2)}`;
+        }
+  
+        return encodeURIComponent(message);
+      }
+  
+      function initializeCheckout() {
+        const isMobile = $(window).width() <= 767.98;
+        const phoneNumber = "916354710794";
+  
+        $("#desktopBtn").off("click").on("click", function () {
+          const encodedMessage = constructWhatsAppMessage();
+          
+          if (isMobile) {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            
+            if (/android/i.test(userAgent)) {
+              window.location.href = `intent://send?phone=${phoneNumber}&text=${encodedMessage}#Intent;scheme=whatsapp;package=com.whatsapp;end`;
+            } else if (/iphone|ipad|ipod/i.test(userAgent)) {
+              window.location.href = `whatsapp://send?phone=${phoneNumber}&text=${encodedMessage}`;
+            } else {
+              window.location.href = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
+            }
+          } else {
+            window.open(`https://web.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`, "_blank");
+          }
+        });
+      }
+  
+      initializeCheckout();
+  
+      $(window).on("resize", function () {
+        initializeCheckout();
+      });
+    });
+  </script>
+  
+  
+
+    
+      <!-- javascript -->
+    <script src="js/app.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

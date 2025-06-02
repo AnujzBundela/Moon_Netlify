@@ -1,0 +1,1658 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  line-height: 26px;
+  font-family: 'Poppins', sans-serif;
+  color: #000;
+  background-color: whitesmoke;
+}
+
+@font-face {
+  font-family: 'Italianno';
+  src: url('../fonts/Italianno-Regular.woff') format('woff');
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+/* Color class Property */
+:root {
+  --cream: #efe1ac;
+  --yellow: #ffd44c;
+  --yellowDark: #e9c051;
+  --yellowExDark: #d6b353;
+  --lightGrey: #9b9a9a;
+}
+/* Color class Property End */
+
+a {
+  text-decoration: none;
+}
+
+img {
+  width: 100%;
+}
+.defaultPadding {
+  padding: 100px 0;
+}
+.display-3 {
+  font-family: 'Italianno';
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 124px;
+  line-height: 148px;
+}
+
+.display-new {
+  font-family: 'Italianno';
+  color: #ffffff;
+  font-weight: 400;
+  font-size: 80px;
+  line-height: 42.8px;
+}
+
+.secH {
+  font-size: 45px;
+  font-weight: 700;
+  line-height: 67.5px;
+}
+
+.secSubH {
+  position: relative;
+  font-size: 30px;
+  display: block;
+  margin-bottom: 25px;
+  line-height: 45px;
+  text-transform: uppercase;
+  color: var(--lightGrey);
+}
+.secSubH::after {
+  content: "";
+  position: absolute;
+  width: 117px;
+  height: 1px;
+  left: 0;
+  bottom: 0;
+  background-color: var(--yellow);
+}
+
+.therdH {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 36px;
+  margin: 1rem 0;
+}
+
+.fourthH {
+  font-weight: 500;
+  font-size: 22px;
+  line-height: 26px;
+  font-style: italic;
+  align-items: center;
+}
+.PriceH {
+  font-family: 'Italianno';
+  font-size: 54px;
+  line-height: 45px;
+  text-align: right;
+  font-weight: 400;
+  color: var(--yellow);
+}
+
+
+/* Enable smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+.scrollToTop {
+  position: fixed;
+  bottom: 100px;
+  right: 51px;
+  background-color: var(--yellowDark);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex
+;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  transition: color 0.3s ease, background-color 0.3s ease;
+}
+
+
+/* Hover effect */
+.scrollToTop:hover {
+  background-color: var(--yellow);
+  color: #ffffff;
+}
+
+
+
+/* whatsapp fab */
+.fab-container {
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Home page Header section  */
+.miniHeader {
+  padding: 20px 0;
+}
+.miniHeader a {
+  color: #ffffff;
+}
+.miniHeader i {
+  padding-right: 6px;
+}
+.numberAndEmail{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 4px 14px;
+}
+
+.miniHeader .row a[href="tel:+968-123-6847"] {
+  padding-right: 20px;
+}
+.miniHeader a:hover {
+  color: var(--yellow);
+}
+.miniHeader .fa-brands {
+  padding: 5px;
+}
+.miniHeader .fa-twitter {
+  padding: 5px 0 5px 5px;
+}
+
+.miniHeader span {
+  padding-right: 10px;
+}
+
+/* navBar  css start*/
+.navbar-toggler-icon {
+  background-image: url('../image/BurgerMenuIcon.svg');
+}
+.navbar-toggler:focus {
+  box-shadow: 0 0 0 .25rem var(--yellow);
+}
+.navbar {
+  padding: 0;
+}
+.navbar .container {
+  background: #00000080;
+  color: #ffffff;
+  padding: 8px 20px;
+}
+.navbar a {
+  color: #ffffff;
+}
+.navbar-brand {
+  padding: 0;
+  margin: 0 0 0 30px;
+  width: 5.5rem;
+}
+.nav-link:focus,
+.nav-link:hover {
+  color: var(--yellow);
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: var(--yellow);
+}
+.navbar .nav-link {
+  position: relative;
+}
+.navbar .nav-link::before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 0%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff42;
+  border-bottom: 2px solid var(--yellow);
+  border-radius: 4px;
+  transition: all 0.5s cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+.navbar .nav-link:hover::before {
+  width: 100%;
+}
+.navbar-expand-lg .navbar-nav {
+  gap: 50px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 27px;
+}
+
+.form-control {
+  position: absolute;
+  border-radius: 50px;
+  margin-right: 0 !important;
+  padding: 0.375rem 0.75rem;
+  border: 1px solid transparent;
+  background-color: transparent;
+  width: 0px;
+  right: 0;
+  top: 0;
+  transition: all 0.4s ease-in-out;
+}
+.navbar form {
+  position: relative;
+}
+.navbar form .btn {
+  position: relative;
+  right: 15px;
+  top: 2px;
+  font-size: 22px;
+  outline: none;
+  border: none;
+}
+/* .navbar form .btn .Fyellow {
+  color: var(--yellow) !important;
+} */
+.navbar form input:hover + .btn i {
+  color: var(--yellow);
+}
+.navbar form .btn:hover {
+  color: var(--yellow) !important;
+}
+.navbar form input:focus + .btn i {
+  color: var(--yellow) !important;
+}
+
+.navbar form:hover input.form-control {
+  border-color: #ced4da;
+  background-color: #ffffff;
+  width: 140px;
+}
+.form-control:focus {
+  border-color: #ced4da;
+  background-color: #ffffff;
+  width: 140px;
+}
+
+/* navBar  css End*/
+
+header:not(#productImage .menu-item .item-info header) {
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+}
+/* Home page Header section  End */
+
+/* banner css start*/
+
+.owl-nav button.owl-prev {
+  left: 0;
+}
+.owl-nav button.owl-next {
+  right: 0;
+}
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.owl-nav button:focus {
+  outline: none;
+}
+.banner .owl-carousel img {
+  height: calc(100vh + 100px);
+  object-fit: cover;
+}
+
+.owl-nav button.owl-prev {
+  left: 2%;
+  background: none !important;
+  color: #ffffffbf !important;
+}
+.owl-nav button.owl-next {
+  right: 2%;
+  background: none !important;
+  color: #ffffffbf !important;
+}
+.owl-carousel button span {
+  font-size: 70px;
+  position: relative;
+  top: -5px;
+}
+.owl-carousel .one .display-3 span {
+  color: var(--yellow);
+  position: relative;
+}
+.owl-carousel .one .display-3 span:nth-child(2)::after {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  width: 100%;
+  height: 4px;
+  background-color: var(--yellow);
+  bottom: 30px;
+  left: 0;
+}
+.owl-carousel .one .display-3 {
+  width: 66%;
+  text-align: center;
+  margin: auto;
+}
+.owl-carousel .one  .display-new {
+  color: var(--cream);
+  font-size: 50px;
+}
+.owl-carousel .item {
+  position: relative;
+}
+.owl-carousel .one .container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 36%;
+}
+.owl-carousel .two .container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 30%;
+}
+.owl-carousel .two span {
+  font-size: 50px;
+}
+.owl-carousel .two .display-3{
+  line-height: 120px;
+}
+.owl-carousel .two span:first-of-type {
+  color: var(--yellow);
+}
+.owl-carousel .two span:last-of-type {
+  color: var(--cream);
+}
+.Mybtn {
+  display: table;
+  padding: 15px 36px;
+  font-weight: 600;
+  color: black;
+  border-radius: 4px;
+  margin: auto;
+  background-color: var(--yellow);
+  margin-top: 40px;
+  transition: all 0.5s ease-in-out;
+}
+.Mybtn:hover {
+  color: #5b3916;
+  background-color: var(--yellowDark);
+}
+
+.OutlineBtn {
+  display: table;
+  position: relative;
+  padding: 15px 36px;
+  font-weight: 600;
+  border: 1px solid var(--yellow);
+  color: black;
+  margin-top: 40px;
+  z-index: 2;
+}
+.OutlineBtn::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  background-color: var(--yellow);
+}
+.OutlineBtn:hover {
+  color: black;
+}
+.OutlineBtn:hover::before {
+  width: 100%;
+}
+
+.banner .owl-carousel .three .container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 40%;
+}
+.banner .owl-carousel .three span {
+  font-size: 50px;
+}
+
+.banner .owl-carousel .three .display-3 {
+  color: var(--yellow);
+}
+
+.banner {
+  position: relative;
+}
+.banner > img {
+  height: 100vh;
+  object-fit: cover;
+}
+.banner > div.container {
+  position: absolute;
+  top: 52%;
+  left: 0;
+  right: 0;
+}
+.banner > div.container .display-3 {
+  text-align: center;
+}
+/* banner css end*/
+
+/* Banner Atached card start*/
+.B_atached .therdH {
+  font-style: italic;
+}
+.B_atached .card1 {
+  padding: 25px;
+  background-color: var(--yellow);
+}
+.B_atached .therdH {
+  position: relative;
+  margin-bottom: 35px;
+}
+.B_atached .card1 .therdH::before {
+  content: url('../image/wineGlass.svg');
+  position: absolute;
+  height: 57px;
+  width: 57px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-65%);
+}
+
+.B_atached a {
+  display: inline-block;
+  margin-top: 4px;
+  color: black;
+  font-weight: 600;
+}
+
+.B_atached a:hover {
+  color: #5b3916;
+}
+
+.B_atached .card2 {
+  padding: 25px;
+  background-color: var(--yellowDark);
+}
+.B_atached .card2 .therdH::before {
+  content: url('../image/Food.svg');
+  position: absolute;
+  height: 57px;
+  width: 50px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-56%);
+}
+.B_atached .card3 {
+  padding: 25px;
+  background-color: var(--yellowExDark);
+}
+
+.B_atached .card3 .therdH::before {
+  content: url('../image/soup.svg');
+  position: absolute;
+  height: 57px;
+  width: 55px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-56%);
+}
+
+.B_atached {
+  position: relative;
+}
+.B_atached .container {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -60%);
+  z-index: 2;
+}
+
+/* Banner Atached card End*/
+
+/* little about us section css Start */
+.LittleAboutUs {
+  padding-top: 200px;
+  background-color: #ffffff;
+}
+.CirclePic img {
+  border-radius: 50%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+.LittleAboutUs .col-md-6 .row {
+  gap: 35px;
+}
+/* little about us section css Start */
+
+/* Chef Recommends Section CSS Start */
+.ChefRecommends {
+  background: url('../image/ChefRecommends.png') no-repeat center;
+  background-size: cover;
+}
+.BefAftStyle {
+  position: relative;
+  display: table;
+  margin: auto;
+  text-align: center;
+  margin-bottom: 70px;
+  color: var(--yellow);
+}
+.BefAftStyleBlack {
+  position: relative;
+  display: table;
+  margin: auto;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 70px;
+  color: #000;
+}
+.BefAftStyle::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 165px;
+  height: 12px;
+  border-top: 2px solid var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.BefAftStyleBlack::before {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 165px;
+  height: 12px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.BefAftStyle::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 165px;
+  height: 12px;
+  border-top: 2px solid var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.BefAftStyleBlack::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 165px;
+  height: 12px;
+  border-top: 2px solid #000;
+  border-bottom: 2px solid #000;
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.ChefRecommends .owl-carousel .item img {
+  height: 100%;
+  object-fit: cover;
+}
+
+.ChefRecommends .owl-carousel .item .Myratio {
+  aspect-ratio: 4/3;
+}
+
+.ChefRecommends .textpart {
+  padding-top: 30px;
+  color: #ffffff;
+}
+
+.ChefRecommends .textpart i {
+  color: var(--yellow);
+}
+/* Chef Recommends Section CSS End */
+
+/* Perfect Ingredients section CSS start */
+
+.PerfectIngredients .col-lg-6 .row img {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+}
+.PerfectIngredients .OutlineBtn{
+  display: table;
+  margin: auto;
+  margin-top: 40px;
+}
+.PerfectIngredients {
+  background-color: #ffffff;
+}
+.PerfectIngredients .col-sm-6 > div {
+  position: relative;
+}
+.PerfectIngredients .overlaytext {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  color: #ffffff;
+  background-color: #0000009d;
+  opacity: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  align-content: center;
+  padding: 10px;
+  transition: all 0.5s ease-in-out;
+}
+
+.PerfectIngredients .overlaytext:hover {
+  opacity: 1;
+}
+/* Perfect Ingredients section CSS End */
+
+/* Special Promotion section start */
+.SpecialPromotion {
+  padding: 50px;
+  background-color: var(--yellow);
+  text-align: center;
+}
+.SpecialPromotion .container {
+  position: relative;
+}
+
+/* Special Promotion section start */
+
+/* How To section start */
+.HowTo ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.HowTo ul li {
+  padding: 5px;
+}
+.HowTo ul li:hover {
+  background-color: #ffffff34;
+}
+.HowTo ul li i {
+  margin-right: 15px;
+}
+.HowTo .OutlineBtn {
+  color: var(--yellow);
+  transition: 0.5s color ease-in-out;
+}
+.HowTo .OutlineBtn:hover {
+  color: black;
+}
+.HowTo {
+  background: url('../image/Howto.png') no-repeat center;
+  background-size: cover;
+}
+
+/* How To section End */
+
+/* recent articles CSS start  */
+.RecentArticles {
+  background-color: #ffffff;
+}
+.RecentArticles .BefAftStyle,
+.Gallery .BefAftStyle {
+  color: #000;
+}
+.RecentArticles .BefAftStyle::before,
+.RecentArticles .BefAftStyle::after,
+.Gallery .BefAftStyle::before,
+.Gallery .BefAftStyle::after,
+.MapSection .BefAftStyle::before,
+.MapSection .BefAftStyle::after {
+  border-color: #000;
+}
+.RecentArticles .col-sm-6 img,
+.RecentArticles .zoomWrap,
+.Gallery .col-lg-8 .zoomWrap,
+.MeetTheTeamCard .zoomWrap,
+.MeetTheTeamCard .zoom {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.MeetTheTeamCard .zoomWrap {
+  border: 2px solid #00000015;
+}
+
+.zoomWrap {
+  overflow: hidden;
+}
+.RecentArticles .OutlineBtn {
+  padding: 5px 23px;
+}
+.RecentArticles .fourthH {
+  margin: 12px 0;
+}
+.RecentArticles .textwrap {
+  padding-top: 15px;
+}
+.RecentArticles .textwrap p {
+  color: var(--lightGrey);
+}
+.RecentArticles .d-flex {
+  color: var(--lightGrey);
+}
+/* recent articles CSS End  */
+
+/* Best Food section CSS Start */
+.BestFood {
+  background: url('../image/1166526_oven_kitchen_restaurant_3840x2160-ezgif.com-optimize.gif')
+    no-repeat center;
+  background-size: cover;
+}
+.BestFood .display-new {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  line-height: 70px;
+}
+.BestFood .display-new span {
+  color: var(--yellow);
+}
+.BestFood.defaultPadding {
+  padding: 150px 0;
+}
+/* Best Food section CSS End */
+
+/* Gallery section CSS start  */
+.Gallery {
+  background-color: #ffffff;
+}
+.Gallery .wrap {
+  flex-grow: 2;
+  gap: 24px;
+}
+.Gallery .col-lg-4 img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+.Gallery .col-lg-4 .zoomWrap {
+  aspect-ratio: 1/1;
+}
+.Gallery .row {
+  row-gap: 30px;
+  height: 100%;
+}
+.Gallery .col-lg-8 img {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.Gallery .col {
+  justify-content: space-between;
+}
+
+/* Gallery section CSS End  */
+
+/* testimonial section css start */
+.Testimonial {
+  color: #ffffff;
+  text-align: center;
+  background: url('../image/47795c37b81cd9d6279f90c97990942d.jfif') no-repeat
+    center;
+  background-size: cover;
+}
+
+.Testimonial .item span span {
+  color: var(--yellow);
+}
+.Testimonial #ca3 .owl-nav button {
+  position: relative;
+  top: auto;
+  bottom: 0px;
+  transform: translate(-0%, 0);
+  margin-top: 50px;
+}
+.Testimonial #ca3 .owl-nav button.owl-prev {
+  left: auto;
+  background: none !important;
+  color: var(--yellow) !important;
+  margin-right: 10px;
+}
+.Testimonial #ca3 .owl-nav button.owl-next {
+  right: auto;
+  background: none !important;
+  color: var(--yellow) !important;
+  margin-left: 10px;
+}
+.Testimonial #ca3 button span {
+  font-size: 30px;
+}
+.Testimonial #ca3 p {
+  position: relative;
+  width: 55%;
+  font-style: italic;
+  margin: auto;
+}
+.Testimonial #ca3 p::before {
+  content: url('../image/Quote.svg');
+  position: absolute;
+  display: inline-block;
+  opacity: 0.5;
+  top: 0;
+  left: -100px;
+}
+.Testimonial #ca3 p::after {
+  content: url('../image/Quote.svg');
+  position: absolute;
+  display: inline-block;
+  opacity: 0.5;
+  top: 0;
+  transform: rotate(180deg);
+  right: -100px;
+}
+.Testimonial #ca3 p,
+.Testimonial #ca3 .item span {
+  font-weight: 600;
+}
+.zoom {
+  transition: all 0.5s ease-in-out;
+}
+.zoom:hover {
+  transform: scale(1.2, 1.2);
+}
+/* testimonial section css End */
+
+/* meet the team section CSS start */
+.MeetTheTeamCard {
+  background-color: #ffffff;
+}
+.MeetTheTeamCard .textpart {
+  padding: 25px;
+  padding-bottom: 0;
+  text-align: center;
+}
+.MeetTheTeamCard .therdH {
+  margin: 0 0 5px 0;
+  color: var(--yellow);
+  font-weight: 500;
+  font-style: italic;
+}
+.MeetTheTeamCard p {
+  color: var(--lightGrey);
+  margin-top: 1rem;
+}
+.MeetTheTeamCard .fIcons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.MeetTheTeamCard .fIcons a {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 36px;
+  width: 36px;
+  color: #232323;
+  border: 2px solid #232323;
+  border-radius: 50%;
+  font-size: 20px;
+}
+.MeetTheTeamCard .fIcons a:hover {
+  background-color: var(--cream);
+}
+
+/* meet the team section CSS End */
+
+/* We're The Great Team! Section Css start */
+.WeAreTheGreatTeam {
+  background: url('../image/weAretheGreatTeam.png') no-repeat center;
+  background-size: cover;
+}
+.WeAreTheGreatTeam .container {
+  position: relative;
+}
+.WeAreTheGreatTeam .therdH {
+  margin-top: 0;
+}
+.WeAreTheGreatTeam #Chef1 .owl-dots span {
+  display: inline-block;
+  position: relative;
+  background-color: #d9d9d9;
+  height: 4px;
+  width: 25px;
+  border-radius: 8px;
+}
+.WeAreTheGreatTeam #Chef1 .active span {
+  background-color: var(--yellow);
+}
+.WeAreTheGreatTeam #Chef1 .owl-dot:first-child {
+  margin-right: 15px;
+}
+.WeAreTheGreatTeam #Chef1 .owl-dots {
+  position: absolute;
+  bottom: 40px;
+  left: 50px;
+}
+.WeAreTheGreatTeam  #Chef1 .item {
+  background-color: #2e353a;
+  color: #ffffff;
+  padding: 50px;
+}
+.WeAreTheGreatTeam.defaultPadding,
+.MapSection.defaultPadding {
+  padding: 100px 0 0;
+}
+
+/* We're The Great Team! Section CSS End */
+
+/*  Meet Again section CSS start */
+.MeetSecond .row {
+  justify-content: space-between;
+}
+/*  Meet Again section CSS start */
+
+/* contact Phone number Section CSS start */
+.contactPhoneNumber .wrap {
+  background-color: #ffffff;
+  padding: 35px 50px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 25px;
+  border-radius: 4px;
+}
+.contactPhoneNumber .wrap .text{
+  width: 75%;
+}
+.contactPhoneNumber .minicard .icons {
+  height: 60px;
+  width: 60px;
+  background-color: #fff7d6;
+  color: var(--yellow);
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+}
+.contactPhoneNumber .minicard a {
+  color: var(--lightGrey);
+}
+.contactPhoneNumber .minicard a:hover {
+  color: #000;
+}
+.contactPhoneNumber .col-lg-5 {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 25px;
+}
+.contactPhoneNumber .wrap2 {
+  background-color: #ffffff;
+  padding: 50px;
+  border-radius: 4px;
+}
+.contactPhoneNumber .wrap2 p,
+.contactPhoneNumber .wrap2 input::placeholder,
+.contactPhoneNumber .wrap2 textarea::placeholder {
+  color: var(--lightGrey);
+}
+.contactPhoneNumber .wrap2 button {
+  margin-top: 34px;
+  padding: 14px 36px;
+  background-color: var(--yellow);
+  color: black;
+  font-weight: 600;
+  border: 2px solid transparent;
+  border-radius: 4px;
+  font-family: 'Poppins', sans-serif;
+}
+.contactPhoneNumber .wrap2 button:hover {
+  border: 2px solid black;
+}
+.contactPhoneNumber .wrap2 input,
+.contactPhoneNumber .wrap2 textarea {
+  padding: 10px 14px;
+  border-radius: 4px;
+  width: 100%;
+  border: 1px solid var(--lightGrey);
+}
+.contactPhoneNumber .wrap2 .row {
+  row-gap: 24px;
+}
+textarea {
+  resize: none;
+}
+
+/* contact Phone number Section CSS start */
+
+/* Map Section css Start  */
+.MapSection .secH {
+  color: #000;
+}
+.MapSection p {
+  width: 60%;
+  text-align: center;
+  margin: auto;
+  color: var(--lightGrey);
+  margin-bottom: 4rem;
+}
+.MapSection .container div {
+  aspect-ratio: 20/9;
+}
+/* Map Section CSS End  */
+
+/* Appetizers Section Css Start */
+.Appetizers .zoomWrap {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+}
+.Appetizers .fourthH {
+  font-weight: 600;
+  font-style: normal;
+}
+.Appetizers ul span {
+  color: var(--lightGrey);
+}
+.Appetizers ul .therdH {
+  color: var(--yellow);
+}
+.Appetizers ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.Appetizers ul li {
+  border: 2px solid transparent;
+  padding: 10px 15px;
+}
+.Appetizers ul li:hover {
+  border-color: var(--yellow);
+}
+/* Appetizers Section Css end */
+
+/* Brunches Section css start */
+.Devider .secH {
+  color: var(--yellow);
+  font-style: italic;
+}
+.Devider .therdH {
+  color: #ffffff;
+}
+.Brunches {
+  background: url('../image/backImageNew\ \(1\).jfif') no-repeat center;
+  background-size: cover;
+}
+
+/* Brunches Section css End */
+
+/* BrunchesCard section CSS Start */
+.BrunchesCard .textpart .fourthH {
+  font-weight: 600;
+  font-style: normal;
+}
+.BrunchesCard .textpart i {
+  color: var(--yellow);
+}
+.BrunchesCard .zoomWrap,
+.DinnerCard .zoomWrap {
+  aspect-ratio: 4/3;
+  position: relative;
+}
+.BrunchesCard .zoom,
+.DinnerCard .zoom {
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+.BrunchesCard .overlay {
+  position: absolute;
+  background-color: #0000009d;
+  bottom: 0;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: stretch;
+  pointer-events: none;
+  transition: all 0.5s ease-in-out;
+}
+.BrunchesCard .overlay h2 {
+  color: var(--yellow);
+  font-size: 26px;
+}
+.BrunchesCard .overlay div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+}
+.BrunchesCard .row,
+.DinnerCard .row {
+  row-gap: 24px;
+}
+.BrunchesCard .overlay p {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.BrunchesCard .zoomWrap:hover .overlay {
+  height: 100%;
+}
+/* BrunchesCard section CSS End */
+
+/* Dinner Section Css Start */
+.Dinner {
+  background: url('../image/backImageNew\ \(2\).png') no-repeat center;
+  background-size: cover;
+}
+/* Dinner Section Css End */
+
+/* DinnerCard section CSS Start */
+.DinnerCard .zoomWrap .overlay {
+  position: absolute;
+  background-color: #0000009d;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  pointer-events: none;
+  opacity: 0;
+  transform: translateX(-101%);
+  transition: all 0.5s ease-in-out;
+}
+.DinnerCard .zoomWrap:hover .overlay {
+  transform: translateX(0);
+  opacity: 1;
+}
+
+.DinnerCard .zoomWrap .overlay p:last-of-type {
+  margin-bottom: 0;
+}
+
+/* DinnerCard section CSS End */
+
+/* Sweet Delight Section css start  */
+.SweetDelight {
+  background: url('../image/backImageNew\ \(1\).png') no-repeat center;
+  background-size: cover;
+}
+/* Sweet Delight Section css End  */
+
+/* Appetizers section css Start */
+
+.Appetizers .container > div.row {
+  row-gap: 40px;
+}
+.row.reverse {
+  flex-direction: row-reverse;
+}
+
+/* Appetizers section css End */
+
+/* Text Cards Section css Start */
+.TextCards {
+  text-align: center;
+}
+.TextCards .therdH {
+  font-style: italic;
+}
+.TextCards p {
+  color: var(--lightGrey);
+}
+
+.TextCards .row {
+  row-gap: 24px;
+}
+/* Text Cards Section css End */
+
+/* Circle Image plus Text Section CSS Start */
+.CircleImagePlusText {
+  background-color: #ffffff;
+}
+.CircleImagePlusText .zoomWrap {
+  border-radius: 50%;
+  outline: 2px solid var(--lightGrey);
+  outline-offset: 10px;
+  margin: 12px;
+}
+.CircleImagePlusText .zoom {
+  aspect-ratio: 1/1;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.CircleImagePlusText .secondRow {
+  flex-direction: row-reverse;
+  text-align: right;
+}
+.CircleImagePlusText p {
+  margin-bottom: 0;
+}
+
+.CircleImagePlusText .row {
+  position: relative;
+}
+.CircleImagePlusText .row:nth-child(1) {
+  margin-bottom: 100px;
+}
+.CircleImagePlusText .row:nth-child(2) {
+  margin-bottom: 100px;
+}
+.CircleImagePlusText .row:nth-child(1)::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  border-bottom: 2px dotted var(--lightGrey);
+}
+.CircleImagePlusText .row:nth-child(2)::after {
+  content: "";
+  width: 100%;
+  position: absolute;
+  left: 0;
+  bottom: -50px;
+  border-bottom: 2px dotted var(--lightGrey);
+}
+
+/* Circle Image plus Text Section CSS End */
+
+/* story About Us Section CSS start */
+.storyAboutUs {
+  color: #ffffff;
+  background-image: linear-gradient(
+      180deg,
+      rgba(0, 0, 0, 0.4),
+      rgba(0, 0, 0, 0.4)
+    ),
+    url('../image/3a3505673bbef68295ff0a06bfd32fcc.png');
+  background-position: center, center;
+  background-repeat: no-repeat, no-repeat;
+  background-size: cover, cover;
+}
+
+.storyAboutUs .secH {
+  color: var(--yellow);
+}
+.storyAboutUs .col-md-6 label,
+.storyAboutUs .col-md-6 input {
+  width: 100%;
+}
+.storyAboutUs .col-md-6 label:nth-of-type(2),
+.storyAboutUs .col-md-6 label:nth-of-type(3) {
+  margin-top: 50px;
+}
+
+.storyAboutUs .col-md-6  
+input[type="range"] {
+  -webkit-appearance: none !important;
+  height: 5px;
+  overflow: hidden;
+  border-radius: 0;
+  background-color: #ffffff;
+}
+
+.storyAboutUs .col-md-6  input[type="range"]::-ms-fill-upper {
+  background: var(--yellow);
+}
+.storyAboutUs .col-md-6 input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none !important;
+  background: var(--yellow);
+  height: 5px;
+  width: 5px;
+  border-radius: 50%;
+  box-shadow: -100vw 0 0 100vw var(--yellow);
+}
+
+
+
+.AftStyle {
+  position: relative;
+  margin-bottom: 70px;
+  color: var(--yellow);
+}
+.AftStyle::after {
+  content: "";
+  position: relative;
+  display: inline-block;
+  width: 165px;
+  height: 12px;
+  border-top: 2px solid var(--yellow);
+  border-bottom: 2px solid var(--yellow);
+  left: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.storyAboutUs .row:nth-child(3) {
+  margin-top: 70px !important;
+  gap: 140px;
+  row-gap: 30px;
+}
+.storyAboutUs .display-new {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 500;
+  line-height: 120px;
+  margin-bottom: 10px;
+}
+.storyAboutUs .col-sm-6 p {
+  margin: 0;
+}
+
+/* story About Us Section CSS End */
+
+/* perfect Ingredient2 CSS start */
+.perfectIngredient2 .secH {
+  font-size: 35px;
+}
+.perfectIngredient2 p {
+  color: var(--lightGrey);
+}
+.perfectIngredient2 .col-md-5 {
+  width: 40%;
+}
+.perfectIngredient2 .col-md-7 {
+  width: 60%;
+}
+.perfectIngredient2 .row {
+  row-gap: 24px;
+}
+.perfectIngredient2 .row.margin {
+  margin-top: 24px;
+}
+.perfectIngredient2 img {
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  object-position: center;
+}
+/* perfect Ingredient2 CSS End */
+
+/* footer css start */
+footer {
+  background-color: #232323;
+  color: #ffffff;
+}
+footer .navbar-brand {
+  display: block;
+  margin-left: 0;
+  margin-bottom: 30px;
+}
+footer p {
+  margin: 22px 0;
+}
+footer .fIcons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+footer > :nth-child(1) a.fa-brands {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  height: 24px;
+  width: 24px;
+  background-color: var(--cream);
+  color: #232323;
+  border-radius: 50%;
+}
+footer .fIcons a:hover {
+  background-color: var(--yellow);
+}
+footer .fourthH {
+  color: var(--yellow);
+  margin-bottom: 36px;
+}
+footer ul {
+  list-style-type: none;
+  padding-left: 22px;
+}
+footer ul a {
+  color: #ffffff;
+  position: relative;
+}
+footer ul a:hover {
+  color: var(--cream);
+}
+footer ul li {
+  position: relative;
+  margin-bottom: 25px;
+}
+footer ul li::before {
+  content: "\f054";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  position: absolute;
+  left: -20px;
+  color: var(--cream);
+  font-size: 14px;
+}
+footer ul a::after,
+footer .about p::after,
+footer .about a::after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  width: 0%;
+  bottom: -5px;
+  left: 0;
+  background-color: var(--yellow);
+  transition: all 0.5s cubic-bezier(0.52, 1.64, 0.37, 0.66);
+}
+footer ul a:hover::after,
+footer .about p:hover::after,
+footer .about a:hover::after {
+  width: 100%;
+}
+footer .about p,
+footer .about a {
+  margin-bottom: 25px;
+  color: #ffffff;
+  position: relative;
+}
+footer .about a i,
+footer .about p i {
+  color: var(--cream);
+  padding-right: 15px;
+}
+footer .about a {
+  display: table;
+}
+
+footer .about a:hover,
+footer .about p:hover {
+  color: var(--cream);
+}
+
+footer .companyImage a {
+  display: inline-block;
+  width: 22%;
+}
+/* footer css start */
+
+
+.SearchSection  .btn {
+  border-color: var(--yellow);
+  color: #ffffff;
+}
+
+/* menu Items css  */
+#menu{
+  row-gap: 24px;
+}
+#menu .wrap  .fourthH{
+font-weight: 600;
+font-style: normal;
+}
+
+#menu .wrap  .btn{
+  background-color: var(--yellow);
+  margin-top: 8px;
+}
+.wrap2{
+  margin-bottom: 20px;
+}
+#btn1 button{
+  background-color: var(--yellow);
+  color: #000;
+  border-color: var(--yellow);
+}
+.wrap2 button,.wrap2 button:hover,.wrap2 button.active,.wrap2 button.show{
+  background-color: var(--yellow);
+  color: #000;
+  border-color: var(--yellow);
+}
+
+
+#menu .btn{
+  display: table;
+  margin: auto;
+}
+
+.imageContainer{
+  margin-bottom: 8px;
+}
+.imageContainer img{
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+
+.filterButtons{
+  height: 100vh;
+  overflow-y: auto;
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.filterButtons-webkit-scrollbar { 
+  display: none;  /* Safari and Chrome */
+}
+.filterButtons .btn{
+  position: relative;
+  padding: 8px 36px ;
+  width: 100%;
+  border-radius: 0;
+  font-weight: 600;
+  border: 1px solid var(--yellow);
+  margin-top: 8px;
+}
+.filterButtons .btn:nth-child(1){
+  margin-top: 0;
+}
+
+.filterButtons .btn::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  transition: all 0.5s ease-in-out;
+  background-color: var(--yellow);
+}
+
+.filterButtons .btn:hover::before{
+width: 100%;
+}
+
+.sideBar{
+  position: relative;
+}
+
+.sideBar .stickySideBar{
+  position: sticky;
+  top: 0;
+}
+
+
+#productImage {
+  margin-top: 8px;
+}
+#productImage:nth-child(1){
+  margin-top: 0;
+}
+#productImage .menu-item{
+  display: flex;
+  flex-wrap: wrap;
+}
+#productImage .menu-item img{
+  width: 30%;
+  aspect-ratio: 1;
+  object-fit: cover;
+}
+#productImage .menu-item .item-info{
+  width: 70%;
+  padding-left: 8px;
+}
+
+#productImage .menu-item .item-info header{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#productImage .menu-item .item-info header h4{
+  font-size: 16px;
+}
+
+#productImage .menu-item .item-info .price{
+  color: var(--yellowDark);
+}
+
+._23FHuj{
+  height: 32px;
+  width: 32px;
+  text-align: center;
+  border-radius: 50%;
+  border: 2px solid var(--yellowDark);
+  background-color: var(--cream);
+}
+._253qQJ{
+  width: 80px;
+  border-radius: 4px;
+  border: 2px solid var(--yellowDark);
+}
+
+#loading {
+  text-align: center;
+  font-size: 18px;
+  color: gray;
+  margin: 20px;
+  display: none;
+}
+
+.modal-open .modal-footer .Mybtn {
+  display: inline-block;
+  padding: 6px 12px;
+  font-weight: 600;
+  color: black;
+  border-radius: 4px;
+  margin: 4px;
+  background-color: var(--yellow);
+  transition: all 0.5sease-in-out;
+}
+

@@ -1,0 +1,1 @@
+$(function(){var e=["https://web.whatsapp.com/send?phone=919978223443","https://api.whatsapp.com/send?phone=919978223443"];function t(){var t=767.98>$(window).width();$(".set-url-target").attr("href",e[t?1:0])}$(window).on("resize",function(){clearTimeout(this.resizeTimer),this.resizeTimer=setTimeout(t,200)}).trigger("resize")});

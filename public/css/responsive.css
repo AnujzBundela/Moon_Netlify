@@ -1,0 +1,571 @@
+@media only screen and (min-width: 1920px) {
+}
+
+@media only screen and (min-width: 1600px) and (max-width: 1900px) {
+}
+
+@media only screen and (min-width: 1300px) and (max-width: 1390px) {
+  .BestFood .display-new {
+    width: 56%;
+  }
+}
+
+@media only screen and (min-width: 1200px) and (max-width: 1280px) {
+  .BestFood .display-new {
+    width: 58%;
+  }
+}
+
+@media screen and (max-width: 1180px) {
+  /* ipad landscape view */
+  .owl-carousel .two .container {
+    top: 28%;
+  }
+  .display-3 {
+    font-size: 100px;
+    line-height: 98px;
+  }
+  .B_atached .therdH {
+    position: relative;
+    margin-bottom: 35px;
+    text-align: right !important;
+  }
+  .navbar-expand-lg .navbar-nav {
+    gap: 20px;
+  }
+  .SpecialPromotion .container {
+    padding-top: 80px;
+  }
+
+  .BestFood .display-new {
+    width: 70%;
+  }
+
+  .storyAboutUs .row:nth-child(3) {
+    margin-top: 70px !important;
+    gap: 95px;
+  }
+  .contactPhoneNumber .wrap {
+    padding: 35px 22px;
+  }
+  .perfectIngredient2 .secH {
+    font-size: 30px;
+  }
+  .contactPhoneNumber .wrap .text {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  /* ipad portrait view */
+  .miniHeader .col-auto:nth-child(1) {
+    text-align: center;
+    font-size: 14px;
+  }
+  .miniHeader .col-auto:nth-child(1) {
+    text-align: center;
+    font-size: 14px;
+  }
+  .miniHeader .row {
+    justify-content: center !important;
+    flex-direction: column;
+    align-items: center;
+  }
+  .owl-carousel .one .display-3 {
+    width: 80%;
+  }
+  .navbar-expand-lg .navbar-nav {
+    gap: 10px;
+  }
+  .navbar form {
+    justify-content: end;
+  }
+  .navbar-nav {
+    align-items: end;
+  }
+  .navbar form:hover .btn i {
+    color: var(--yellow);
+  }
+  footer .row {
+    row-gap: 20px;
+  }
+  footer .about a:last-of-type {
+    margin-bottom: 0;
+  }
+  footer ul li {
+    margin-bottom: 5px;
+  }
+  .owl-carousel .one .container {
+    top: 40%;
+  }
+  .owl-carousel .two .container {
+    top: 40%;
+  }
+  .owl-carousel .three .container {
+    top: 44%;
+  }
+  #ca2 button span {
+    background-color: #000000c6 !important;
+    border-radius: 10px;
+    display: inline-block;
+    height: 50px;
+    padding: 5px;
+  }
+  .BefAftStyle::before,
+  .BefAftStyleBlack::before,
+  .BefAftStyle::after,
+  .BefAftStyleBlack::after,
+  .AftStyle::after {
+    width: 80px;
+  }
+
+  .form-control {
+    position: relative;
+    border-radius: 50px;
+    margin-right: 0 !important;
+    padding: 0.375rem 0.75rem;
+    border: 1px solid #ced4da;
+    background-color: #ffffff;
+    width: 140px;
+    right: auto;
+    top: auto;
+    transition: none;
+  }
+
+  .navbar form {
+    position: relative;
+  }
+  .navbar form .btn {
+    position: absolute;
+    right: 15px;
+    top: 2px;
+    color: var(--yellow) !important;
+    font-size: 22px;
+    outline: none;
+    border: none;
+  }
+  .BestFood .display-new {
+    width: 90%;
+  }
+  .MeetTheTeamCard .textpart {
+    padding-bottom: 25px;
+  }
+  .contactPhoneNumber .minicard:nth-child(odd) {
+    padding: 0 0.8rem 0 0;
+  }
+  .contactPhoneNumber .minicard:nth-child(even) {
+    padding: 0 0 0 0.8rem;
+  }
+  .Gallery .d-flex.flex-wrap.flex-column {
+    row-gap: 24px;
+  }
+  .storyAboutUs .row:nth-child(3) {
+    gap: 16px;
+  }
+  .navbar .nav-link::before {
+    display: none;
+  }
+  .contactPhoneNumber .wrap {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contactPhoneNumber .wrap .icons {
+    align-self: center;
+  }
+
+  .filterButtons .btn{
+   width: unset;
+  }
+  .filterButtons{
+    height: unset;
+  }
+
+  .filterButtons .btn:nth-child(1) {
+    margin-top: 8px;
+  }
+  .filterButtons .btn {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+  
+  .sideBar .stickySideBar{
+    position: static;
+  }
+
+  .miniHeader {
+    padding: 4px 0;
+}
+.navbar-brand {
+  width: 4.5rem;
+}
+
+.offcanvas-lg.offcanvas-bottom {
+  height: 40vh;
+}
+
+
+}
+
+@media screen and (max-width: 912px) {
+  .Gallery .container > .row {
+    justify-content: center;
+  }
+
+  .banner .owl-carousel .three .container {
+    top: 44%;
+  }
+
+  footer ul li::before {
+    display: none;
+  }
+  footer .fourthH {
+    text-align: center;
+  }
+  footer ul a {
+    display: table;
+    margin: auto;
+    width: 82px;
+  }
+  footer ul a::before {
+    content: "\f054";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    position: absolute;
+    left: -20px;
+    color: var(--cream);
+    font-size: 14px;
+  }
+  .secH {
+    font-size: 37px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  /* Mobile landscape view */
+
+  .banner .display-3 {
+    width: 100%;
+    font-size: 80px;
+  }
+  .miniHeader .col-auto:nth-child(1) {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    font-size: 14px;
+  }
+  .miniHeader .col-auto:nth-child(2) {
+    display: none;
+  }
+  .miniHeader .row {
+    justify-content: center !important;
+  }
+  .B_atached .therdH {
+    position: relative;
+    margin-bottom: 35px;
+    margin-top: 0;
+    padding-top: 70px;
+    text-align: center !important;
+  }
+  .B_atached .therdH::before {
+    left: 50% !important;
+    top: 0 !important;
+    transform: translate(-50%, 0) !important;
+  }
+  .B_atached .container {
+    padding-top: 50px;
+    padding-bottom: 40px;
+    position: relative;
+    left: auto;
+    transform: none;
+  }
+  .B_atached {
+    background-color: #ffffff;
+    border-bottom: 1px solid var(--yellow);
+  }
+  .owl-carousel .one .display-3 span:nth-child(2)::after {
+    bottom: 20px;
+  }
+  .LittleAboutUs .col-md-6.d-flex {
+    padding-top: 50px;
+  }
+  .LittleAboutUs .col-md-6.d-flex .row {
+    justify-content: center !important;
+  }
+  .LittleAboutUs {
+    padding-top: 50px;
+  }
+  .defaultPadding {
+    padding: 50px 0;
+  }
+  .banner .owl-carousel img {
+    height: 100vh;
+    object-fit: cover;
+  }
+  .BefAftStyle::before,
+  .BefAftStyleBlack::before,
+  .BefAftStyle::after,
+  .BefAftStyleBlack::after {
+    width: 50px;
+  }
+
+  .LittleAboutUs .col-md-6 .row {
+    gap: 0;
+  }
+  .BestFood .display-new {
+    width: 100%;
+  }
+  .BestFood.defaultPadding {
+    padding: 80px 0;
+  }
+  .Gallery .col {
+    width: 100%;
+    flex: auto;
+    row-gap: 24px;
+    flex-direction: row !important;
+    gap: 24px;
+  }
+  .Gallery .row {
+    row-gap: 30px;
+    height: auto;
+  }
+  .Gallery .col img {
+    aspect-ratio: 4/3;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .WeAreTheGreatTeam.defaultPadding {
+    padding: 100px 0;
+  }
+  .contactPhoneNumber .minicard:nth-child(odd) {
+    padding: 0;
+  }
+  .contactPhoneNumber .minicard:nth-child(even) {
+    padding: 0;
+  }
+  .CircleImagePlusText .secondRow {
+    text-align: left;
+  }
+  .CircleImagePlusText .row:nth-child(1) {
+    margin-bottom: 70px;
+  }
+  .CircleImagePlusText .row:nth-child(2) {
+    margin-bottom: 70px;
+  }
+  .CircleImagePlusText .row:nth-child(1)::after {
+    bottom: -35px;
+  }
+  .CircleImagePlusText .row:nth-child(2)::after {
+    bottom: -35px;
+  }
+
+  .storyAboutUs .row:nth-child(3) {
+    gap: 0;
+    row-gap: 30px;
+  }
+  .perfectIngredient2 .col-md-5 {
+    width: 100%;
+  }
+  .perfectIngredient2 .col-md-7 {
+    width: 100%;
+  }
+
+  /* whatsapp FAB */
+  .fab-container {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  .scrollToTop {
+    position: fixed;
+    bottom: 58px;
+    right: 10px;
+    background-color: var(--yellowDark);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    text-decoration: none;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: color 0.3sease, background-color 0.3sease;
+}
+}
+
+@media screen and (max-width: 575.98px) {
+  /* Mobile portrait view */
+  .navbar-brand {
+    margin-left: 0;
+  }
+  .contactPhoneNumber .col-lg-7{
+    text-align: center;
+  }
+ 
+  .secH {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .secSubH {
+    font-size: 26px;
+    line-height: 38px;
+  }
+  .display-new:not(.storyAboutUs .display-new) {
+    font-family: "Italianno";
+    color: #ffffff;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 25px;
+  }
+  .banner .display-3 {
+    width: 100%;
+    font-size: 40px;
+    line-height: 50px;
+  }
+  .owl-carousel .one .display-3 span:nth-child(2)::after {
+    bottom: 5px;
+  }
+
+  .owl-nav button {
+    top: 61%;
+  }
+  .owl-carousel .one .container {
+    top: 56%;
+  }
+  .owl-carousel .two .container {
+    top: 44%;
+  }
+  .banner .owl-carousel .three .container {
+    top: 56%;
+  }
+
+  .B_atached {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+  }
+  .BefAftStyle::before,
+  .BefAftStyleBlack::before,
+  .BefAftStyle::after,
+  .BefAftStyleBlack::after,
+  .AftStyle::after {
+    display: none;
+  }
+
+  .LittleAboutUs .col-md-6 .row {
+    gap: 30px;
+  }
+  .LittleAboutUs .col-md-6,
+  .PerfectIngredients .col-lg-6,
+  .HowTo .col-md-4 {
+    text-align: center;
+  }
+  .LittleAboutUs .secSubH::after,
+  .PerfectIngredients .secSubH::after {
+    right: 0;
+    margin: auto;
+  }
+  .LittleAboutUs .OutlineBtn,
+  .HowTo .OutlineBtn {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .BestFood.defaultPadding {
+    padding: 50px 0;
+  }
+  .BestFood .display-new {
+    line-height: 30px;
+  }
+  .Testimonial #ca3 p,
+  .MapSection p {
+    width: 100%;
+  }
+  .Testimonial #ca3 p::before,
+  .Testimonial #ca3 p::after {
+    display: none;
+  }
+  .CircleImagePlusText .row:nth-child(1) {
+    margin-bottom: 50px;
+  }
+  .CircleImagePlusText .row:nth-child(2) {
+    margin-bottom: 50px;
+  }
+  .CircleImagePlusText .row:nth-child(1)::after {
+    bottom: -25px;
+  }
+  .CircleImagePlusText .row:nth-child(2)::after {
+    bottom: -25px;
+  }
+  .CircleImagePlusText .col-md-9{
+    text-align: center;
+  }
+
+  .Gallery .zoomWrap {
+    width: 100%;
+  }
+
+  footer {
+    text-align: center;
+  }
+  footer .col-lg-4 a {
+    margin: auto;
+    /* width: 270px;
+    text-align: left; */
+  }
+  footer .col-lg-4>a {
+    margin: auto;
+    margin-bottom: 16px;
+  }
+  footer .navbar-brand {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  footer .fIcons {
+    justify-content: center;
+  }
+  footer .row {
+    row-gap: 40px;
+  }
+}
+
+/* .owl-carousel .one .container {
+  top: 40%;
+}
+.owl-carousel .two .container {
+  top: 40%;
+}
+.banner .owl-carousel .three .container {
+  top: 40%;
+} */
+
+@media screen and (max-width: 375px) {
+  .owl-nav button {
+    top: 61%;
+  }
+  .owl-carousel .one .container {
+    top: 52%;
+  }
+  .owl-carousel .two .container {
+    top: 44%;
+  }
+  .banner .owl-carousel .three .container {
+    top: 56%;
+  }
+}
+
+@media screen and (max-width: 280px) {
+  .contactPhoneNumber .wrap {
+    padding: 10px 0;
+  }
+  .contactPhoneNumber .wrap2 {
+    padding: 20px;
+  }
+}
